@@ -26,6 +26,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "unocss": "^0.51.8",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1"
   }
