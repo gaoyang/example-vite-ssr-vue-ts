@@ -32,6 +32,9 @@ declare module '@vue/runtime-core' {
     IFluentEmojiHouse: typeof import('~icons/fluent-emoji/house')['default']
     IFluentEmojiInformation: typeof import('~icons/fluent-emoji/information')['default']
     IVscodeIconsDefaultFolderOpenedfileTypeVite: typeof import('~icons/vscode-icons/default-folder-openedfile-type-vite')['default']
+    IVscodeIconsFileTypeTs: typeof import('~icons/vscode-icons/file-type-ts')['default']
+    IVscodeIconsFileTypeTypescript: typeof import('~icons/vscode-icons/file-type-typescript')['default']
     IVscodeIconsFileTypeVite: typeof import('~icons/vscode-icons/file-type-vite')['default']
+    IVscodeIconsFileTypeVue: typeof import('~icons/vscode-icons/file-type-vue')['default']
   }
 }
