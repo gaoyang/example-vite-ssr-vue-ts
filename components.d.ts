@@ -9,6 +9,29 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ElAside: typeof import('element-plus/lib')['ElAside']
     ElButton: typeof import('element-plus/lib')['ElButton']
+    ElCard: typeof import('element-plus/lib')['ElCard']
+    ElCol: typeof import('element-plus/lib')['ElCol']
+    ElContainer: typeof import('element-plus/lib')['ElContainer']
+    ElHeader: typeof import('element-plus/lib')['ElHeader']
+    ElIcon: typeof import('element-plus/lib')['ElIcon']
+    ElMain: typeof import('element-plus/lib')['ElMain']
+    ElMenu: typeof import('element-plus/lib')['ElMenu']
+    ElMenuItem: typeof import('element-plus/lib')['ElMenuItem']
+    ElMenuItemGroup: typeof import('element-plus/lib')['ElMenuItemGroup']
+    ElRow: typeof import('element-plus/lib')['ElRow']
+    ElScrollbar: typeof import('element-plus/lib')['ElScrollbar']
+    ElSubMenu: typeof import('element-plus/lib')['ElSubMenu']
+    IEpCircleCheckFilled: typeof import('~icons/ep/circle-check-filled')['default']
+    IEpHome: typeof import('~icons/ep/home')['default']
+    IEpMenu: typeof import('~icons/ep/menu')['default']
+    IFeHouse: typeof import('~icons/fe/house')['default']
+    IFluentEmojiBeamingFaceWithSmilingEyes: typeof import('~icons/fluent-emoji/beaming-face-with-smiling-eyes')['default']
+    IFluentEmojiGlobeShowingAmericas: typeof import('~icons/fluent-emoji/globe-showing-americas')['default']
+    IFluentEmojiHouse: typeof import('~icons/fluent-emoji/house')['default']
+    IFluentEmojiInformation: typeof import('~icons/fluent-emoji/information')['default']
+    IVscodeIconsDefaultFolderOpenedfileTypeVite: typeof import('~icons/vscode-icons/default-folder-openedfile-type-vite')['default']
+    IVscodeIconsFileTypeVite: typeof import('~icons/vscode-icons/file-type-vite')['default']
   }
 }
