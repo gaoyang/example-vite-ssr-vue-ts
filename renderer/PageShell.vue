@@ -19,39 +19,37 @@ const goto = (index: string) => {
     </el-header>
     <el-container>
       <el-aside>
-        <el-scrollbar>
-          <el-menu :default-active="activeLink" @select="goto">
-            <el-menu-item index="/">
-              <el-icon><i-fluent-emoji-house /></el-icon>
-              <span>Home</span>
-            </el-menu-item>
-            <el-menu-item index="/system-info">
-              <el-icon><i-fluent-emoji-information /></el-icon>
-              <span>System Info</span>
-            </el-menu-item>
-            <el-menu-item index="/about">
-              <el-icon><i-fluent-emoji-beaming-face-with-smiling-eyes /></el-icon>
-              <span>About</span>
-            </el-menu-item>
-            <el-sub-menu index="4">
-              <template #title>
-                <el-icon><i-fluent-emoji-globe-showing-americas /></el-icon>
-                <span>Navigator Other</span>
-              </template>
-              <el-menu-item-group title="Group One">
-                <el-menu-item index="1-1">item one</el-menu-item>
-                <el-menu-item index="1-2">item two</el-menu-item>
-              </el-menu-item-group>
-              <el-menu-item-group title="Group Two">
-                <el-menu-item index="1-3">item three</el-menu-item>
-              </el-menu-item-group>
-              <el-sub-menu index="1-4">
-                <template #title>item four</template>
-                <el-menu-item index="1-4-1">item one</el-menu-item>
-              </el-sub-menu>
+        <el-menu :default-active="activeLink" @select="goto" h="100%">
+          <el-menu-item index="/">
+            <el-icon><i-fluent-emoji-house /></el-icon>
+            <span>Home</span>
+          </el-menu-item>
+          <el-menu-item index="/system-info">
+            <el-icon><i-fluent-emoji-information /></el-icon>
+            <span>System Info</span>
+          </el-menu-item>
+          <el-menu-item index="/about">
+            <el-icon><i-fluent-emoji-beaming-face-with-smiling-eyes /></el-icon>
+            <span>About</span>
+          </el-menu-item>
+          <el-sub-menu index="4">
+            <template #title>
+              <el-icon><i-fluent-emoji-globe-showing-americas /></el-icon>
+              <span>Navigator Other</span>
+            </template>
+            <el-menu-item-group title="Group One">
+              <el-menu-item index="1-1">item one</el-menu-item>
+              <el-menu-item index="1-2">item two</el-menu-item>
+            </el-menu-item-group>
+            <el-menu-item-group title="Group Two">
+              <el-menu-item index="1-3">item three</el-menu-item>
+            </el-menu-item-group>
+            <el-sub-menu index="1-4">
+              <template #title>item four</template>
+              <el-menu-item index="1-4-1">item one</el-menu-item>
             </el-sub-menu>
-          </el-menu>
-        </el-scrollbar>
+          </el-sub-menu>
+        </el-menu>
       </el-aside>
       <el-main><slot /></el-main>
     </el-container>

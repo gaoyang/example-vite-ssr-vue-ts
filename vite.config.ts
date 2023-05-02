@@ -14,16 +14,10 @@ const config: UserConfig = {
     ssr(),
     UnoCSS(),
     AutoImport({
-      resolvers: [
-        ElementPlusResolver({ ssr: true }),
-        IconsResolver()
-      ]
+      resolvers: [ElementPlusResolver({ ssr: true }), IconsResolver()]
     }),
     Components({
-      resolvers: [
-        ElementPlusResolver({ ssr: true }),
-        IconsResolver()
-      ]
+      resolvers: [ElementPlusResolver({ ssr: true }), IconsResolver()]
     }),
     Icons({
       autoInstall: true
