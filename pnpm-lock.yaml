@@ -5,6 +5,7 @@ specifiers:
   '@iconify-json/ep': ^1.1.10
   '@iconify-json/fe': ^1.1.6
   '@iconify-json/fluent-emoji': ^1.1.13
+  '@iconify-json/logos': ^1.1.25
   '@iconify-json/vscode-icons': ^1.1.25
   '@types/compression': ^1.7.2
   '@types/express': ^4.17.14
@@ -50,6 +51,7 @@ devDependencies:
   '@iconify-json/ep': 1.1.10
   '@iconify-json/fe': 1.1.6
   '@iconify-json/fluent-emoji': 1.1.13
+  '@iconify-json/logos': 1.1.25
   '@iconify-json/vscode-icons': 1.1.25
   unocss: 0.51.8_vite@4.3.2
   unplugin-auto-import: 0.15.3
@@ -338,6 +340,12 @@ packages:
 
   /@iconify-json/fluent-emoji/1.1.13:
     resolution: {integrity: sha512-9tyClxWzrLwbfItv10/oUp3G7s5X+MUa0VN5P8nN2gmVg9Uy87HoZnDt3IRKNwbyqncXRr3p0VoWuv/Tg2jUCg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/logos/1.1.25:
+    resolution: {integrity: sha512-wmShOx+1Hg3ObawFzmE0C/T6R8m7okxQjjd6RCqjTAAC4ZfYNf3LuP/0XszTrIHnobS5kU6SoDCUKXIXWgr0aw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

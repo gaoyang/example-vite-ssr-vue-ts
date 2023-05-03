@@ -12,9 +12,13 @@ const goto = (index: string) => {
   <el-container h-screen>
     <el-header class="header">
       <el-col>
-        <el-icon size="50"><i-vscode-icons-file-type-vite /></el-icon>
-        <el-icon size="50"><i-vscode-icons-file-type-vue /></el-icon>
-        <el-icon size="50"><i-vscode-icons-file-type-typescript /></el-icon>
+        <el-space spacer="·">
+          <img src="./logo.svg" h-12 w-12 alt="logo" />
+          <el-icon size="50"><i-logos-vitejs /></el-icon>
+          <el-icon size="50"><i-logos-vue /></el-icon>
+          <el-icon size="50"><i-logos-typescript-icon /></el-icon>
+          <el-icon size="50"><i-logos-unocss /></el-icon>
+        </el-space>
       </el-col>
     </el-header>
     <el-container>
