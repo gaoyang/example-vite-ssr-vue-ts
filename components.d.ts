@@ -14,6 +14,8 @@ declare module '@vue/runtime-core' {
     ElCard: typeof import('element-plus/lib')['ElCard']
     ElCol: typeof import('element-plus/lib')['ElCol']
     ElContainer: typeof import('element-plus/lib')['ElContainer']
+    ElDescriptions: typeof import('element-plus/lib')['ElDescriptions']
+    ElDescriptionsItem: typeof import('element-plus/lib')['ElDescriptionsItem']
     ElHeader: typeof import('element-plus/lib')['ElHeader']
     ElIcon: typeof import('element-plus/lib')['ElIcon']
     ElMain: typeof import('element-plus/lib')['ElMain']
