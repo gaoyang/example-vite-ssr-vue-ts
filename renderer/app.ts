@@ -4,8 +4,7 @@ import { setPageContext } from './usePageContext'
 import type { Component, PageContext, PageProps } from './types'
 import { ClientOnly } from '../components/ClientOnly'
 import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-import 'virtual:uno.css'
+import 'uno.css'
 
 export { createApp }
 

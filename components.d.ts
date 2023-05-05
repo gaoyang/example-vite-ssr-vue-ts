@@ -10,7 +10,6 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ElAside: typeof import('element-plus/lib')['ElAside']
-    ElButton: typeof import('element-plus/lib')['ElButton']
     ElCard: typeof import('element-plus/lib')['ElCard']
     ElCol: typeof import('element-plus/lib')['ElCol']
     ElContainer: typeof import('element-plus/lib')['ElContainer']
@@ -23,15 +22,10 @@ declare module '@vue/runtime-core' {
     ElMenuItem: typeof import('element-plus/lib')['ElMenuItem']
     ElMenuItemGroup: typeof import('element-plus/lib')['ElMenuItemGroup']
     ElRow: typeof import('element-plus/lib')['ElRow']
-    ElScrollbar: typeof import('element-plus/lib')['ElScrollbar']
     ElSkeleton: typeof import('element-plus/lib')['ElSkeleton']
     ElSkeletonItem: typeof import('element-plus/lib')['ElSkeletonItem']
     ElSpace: typeof import('element-plus/lib')['ElSpace']
     ElSubMenu: typeof import('element-plus/lib')['ElSubMenu']
-    IEpCircleCheckFilled: typeof import('~icons/ep/circle-check-filled')['default']
-    IEpHome: typeof import('~icons/ep/home')['default']
-    IEpMenu: typeof import('~icons/ep/menu')['default']
-    IFeHouse: typeof import('~icons/fe/house')['default']
     IFluentEmojiBeamingFaceWithSmilingEyes: typeof import('~icons/fluent-emoji/beaming-face-with-smiling-eyes')['default']
     IFluentEmojiGlobeShowingAmericas: typeof import('~icons/fluent-emoji/globe-showing-americas')['default']
     IFluentEmojiHouse: typeof import('~icons/fluent-emoji/house')['default']
@@ -40,10 +34,5 @@ declare module '@vue/runtime-core' {
     ILogosUnocss: typeof import('~icons/logos/unocss')['default']
     ILogosVitejs: typeof import('~icons/logos/vitejs')['default']
     ILogosVue: typeof import('~icons/logos/vue')['default']
-    IVscodeIconsDefaultFolderOpenedfileTypeVite: typeof import('~icons/vscode-icons/default-folder-openedfile-type-vite')['default']
-    IVscodeIconsFileTypeTs: typeof import('~icons/vscode-icons/file-type-ts')['default']
-    IVscodeIconsFileTypeTypescript: typeof import('~icons/vscode-icons/file-type-typescript')['default']
-    IVscodeIconsFileTypeVite: typeof import('~icons/vscode-icons/file-type-vite')['default']
-    IVscodeIconsFileTypeVue: typeof import('~icons/vscode-icons/file-type-vue')['default']
   }
 }
