@@ -1,10 +1,14 @@
 import { createSSRApp, defineComponent, h } from 'vue'
+import { useDark, useToggle } from '@vueuse/core'
 import PageShell from './PageShell.vue'
 import { setPageContext } from './usePageContext'
 import type { Component, PageContext, PageProps } from './types'
 import { ClientOnly } from '../components/ClientOnly'
 import ElementPlus from 'element-plus'
 import 'uno.css'
+import 'element-plus/theme-chalk/dark/css-vars.css'
+
+useDark()
 
 export { createApp }
 
