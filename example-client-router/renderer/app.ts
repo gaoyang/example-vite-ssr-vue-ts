@@ -1,7 +1,13 @@
 import { createSSRApp, defineComponent, h } from 'vue'
+import { useDark, useToggle } from '@vueuse/core'
 import PageShell from './PageShell.vue'
 import { setPageContext } from './usePageContext'
 import type { Component, PageContext, PageProps } from './types'
+import ElementPlus from 'element-plus'
+import 'uno.css'
+import 'element-plus/theme-chalk/dark/css-vars.css'
+
+useDark()
 
 export { createApp }
 
@@ -24,6 +30,7 @@ function createApp(Page: Component, pageProps: PageProps | undefined, pageContex
 
   // Make pageContext available from any Vue component
   setPageContext(app, pageContext)
+  app.use(ElementPlus)
 
   return app
 }

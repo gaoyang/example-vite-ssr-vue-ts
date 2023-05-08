@@ -30,6 +30,14 @@ async function render(pageContext: PageContextServer) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
         <title>${title}</title>
+        <script>
+          (function () {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+            if (setting === 'dark' || (prefersDark && setting !== 'light'))
+              document.documentElement.classList.toggle('dark', true)
+          })()
+        </script>
       </head>
       <body>
         <div id="app">${dangerouslySkipEscape(appHtml)}</div>
