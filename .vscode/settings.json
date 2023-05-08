@@ -3,6 +3,7 @@
     "Attributify",
     "iconify",
     "sirv",
-    "vitejs"
+    "vitejs",
+    "vueuse"
   ]
 }
