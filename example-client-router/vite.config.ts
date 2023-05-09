@@ -11,7 +11,7 @@ import UnoCSS from 'unocss/vite'
 const config: UserConfig = {
   plugins: [
     vue(),
-    ssr(),
+    ssr({ prerender: true }),
     UnoCSS(),
     AutoImport({
       resolvers: [ElementPlusResolver({ ssr: true }), IconsResolver()]

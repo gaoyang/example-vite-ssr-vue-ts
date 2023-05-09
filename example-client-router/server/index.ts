@@ -34,9 +34,9 @@ async function startServer() {
     const pageContext = await renderPage(pageContextInit)
     const { httpResponse } = pageContext
     if (!httpResponse) return next()
-    const { body, statusCode, contentType, earlyHints } = httpResponse
-    if (res.writeEarlyHints) res.writeEarlyHints({ link: earlyHints.map((e) => e.earlyHintLink) })
-    res.status(statusCode).type(contentType).send(body)
+    const { statusCode, contentType } = httpResponse;
+    res.status(statusCode).type(contentType);
+    httpResponse.pipe(res)
   })
 
   const port = process.env.PORT || 3000
