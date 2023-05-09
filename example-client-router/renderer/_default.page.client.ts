@@ -12,3 +12,4 @@ async function render(pageContext: PageContextClient) {
 }
 
 export const clientRouting = true
+export const prefetchStaticAssets = { when: 'VIEWPORT' }

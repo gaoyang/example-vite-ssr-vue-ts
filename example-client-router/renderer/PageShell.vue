@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { usePageContext } from './usePageContext'
+import { navigate } from 'vite-plugin-ssr/client/router'
 const pageContext = usePageContext()
 const activeLink = ref(pageContext.urlPathname)
 const goto = (index: string) => {
-  index.startsWith('/') && window.location.pathname !== index && window.location.replace(index)
+  index.startsWith('/') && window.location.pathname !== index && navigate(index)
 }
 </script>
 
