@@ -27,8 +27,8 @@ function createApp(Page: Component, pageProps: PageProps | undefined, pageContex
         PageShell,
         {},
         {
-          default() {
-            return h(Page, pageProps || {})
+          default: () => {
+            return h(this.Page, this.pageProps)
           }
         }
       )
